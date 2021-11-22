@@ -1,9 +1,9 @@
-# Title: CPNT 200 - Assignment 2 : Netlify CMS Admin Panel & Collections
+# Title: CPNT 200 - Assignment 3 - JAMstack Setup
 ### Author: Byung Uk An
 ### Links to:
-  - **Github Repo:** https://github.com/byung1211/cpnt200-a2
-  - **Netlify Webpage:** https://cpnt200-a2-byung1211.netlify.app/
-  - **Netlify Webpage for Admin:** https://cpnt200-a2-byung1211.netlify.app/admin
+  - **Github Repo:** https://github.com/byung1211/cpnt200-a3
+  - **Netlify Webpage:** https://cpnt200-a3-byung1211.netlify.app/
+  - **Netlify Webpage for Admin:** https://cpnt200-a3-byung1211.netlify.app/admin
   
 ### Attributions
 

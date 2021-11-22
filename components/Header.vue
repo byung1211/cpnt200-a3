@@ -1,6 +1,6 @@
 <template>
   <header>
-    This is for CPNT200 - Assignement 2
+    This is for CPNT200 - Assignement 3
   </header>
 </template>
 <style scoped>

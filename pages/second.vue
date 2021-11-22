@@ -1,13 +1,16 @@
 <template>
-  <!-- <Tutorial/> -->
-  <article>
-    1. This header is from /components/cpnt200_header.vue
-    <cpnt-200-header />
-    <br />
-    2. This is the link to the home page.<br />
-    <NuxtLink to="/">To Home page</NuxtLink>
-    
-  </article>
+  <v-main>
+    <v-container>
+    <Navigation />
+    <Header />
+    <article>
+      <br />
+      2. This is the link to the home page.<br />
+      <NuxtLink to="/">To Home page</NuxtLink>
+      
+    </article>
+    </v-container>
+  </v-main>
 </template>
 <style scoped>
 a {
@@ -19,7 +22,7 @@ a {
 }
 </style>
 <script>
-import cpnt200_header from '../components/cpnt200_header.vue'
+import cpnt200_header from '../components/Header.vue'
 export default {
   components: { cpnt200_header }
 }
