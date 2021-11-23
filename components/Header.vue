@@ -1,13 +1,12 @@
 <template>
-  <header>
-    This is for CPNT200 - Assignement 3
+  <header class="bg-indigo-100 py-3 px-4">
+    <div class="container flex flex-wrap items-center justify-center py-3 mx-auto">
+      <h1 class="text-3xl md:text-4xl font-medium mb-2text-3xl md:text-4xl font-medium mb-2">This is for CPNT200 - Assignement 3</h1>
+    </div>
+    <Navigation />
   </header>
 </template>
 <style scoped>
-  header { 
-    color:red; 
-    font-size:2rem;
-  }
 </style>
 <script>
 export default {}
