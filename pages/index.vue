@@ -2,11 +2,16 @@
   <v-main>
     <v-container>
     <Header />
-
-    <section>
-      <br/><br/><br/>
-      Intro content area
-      <br/><br/><br/>
+    <section class="flex flex-col mx-10">
+      <div class="text-center mt-8 mb-2">
+        <h1 class="text-2xl">Hello, I am Alex, How are you doing?</h1>
+      </div>
+      <div class="text-center my-4 mx-auto">
+        <nuxt-img :src="profile.picture" :alt="profile.name" sizes="sm:100vw md:50vw lg:600px" />
+      </div>
+      <div class="text-center my-2">
+        <nuxt-content :document="introInfo" />
+      </div>
     </section>
     <Footer :copyright="siteInfo.copyright"/>
     </v-container>
@@ -41,8 +46,9 @@ export default {
   },  
   async asyncData ({ $content }) {
     const introInfo = await $content('intro').fetch()
+    const profile = await $content('profile/2021-11-22-this-is-the-first-profile').fetch()
     return {
-      introInfo
+      introInfo, profile
     }
   }
 }
