@@ -1,7 +1,7 @@
 <template>
   <v-main>
     <v-container>
-    <Header />
+    <Header :info="siteInfo" />
     <section class="flex flex-col mx-10">
       <div class="text-center mt-8 mb-2">
         <h1 class="text-2xl">Hello, I am Alex, How are you doing?</h1>
@@ -13,7 +13,7 @@
         <nuxt-content :document="introInfo" />
       </div>
     </section>
-    <Footer :copyright="siteInfo.copyright"/>
+    <Footer :info="siteInfo" />
     </v-container>
   </v-main>
 </template>
@@ -34,11 +34,8 @@ export default {
     };
   },
   data() {
-    return { 
-      siteInfo: {
-        title:'DATA TITLE TEST',
-        copyright: '2021 Alex-Byung Uk An, SAIT WEB DEV PROGRAM'
-      }
+    return {
+      // Custom page data comes here.
     }
   },
   components:{
@@ -46,9 +43,10 @@ export default {
   },  
   async asyncData ({ $content }) {
     const introInfo = await $content('intro').fetch()
+    const siteInfo = await $content('site-info').fetch()
     const profile = await $content('profile/2021-11-22-this-is-the-first-profile').fetch()
     return {
-      introInfo, profile
+      introInfo, siteInfo, profile
     }
   }
 }
