@@ -4,9 +4,9 @@
     <Navigation />
     <Header />
     <article>
-      2. This is the link to the second page.<br />
-      <NuxtLink to="/second">To Second page</NuxtLink><br />
-      <NuxtLink to="/blog/my-first-blog-post">To first post in blog (Dynamic page)</NuxtLink><br />
+      2. This is the link to the gallery page.<br />
+      <NuxtLink to="/gallery">To Gallery page</NuxtLink><br />
+      <NuxtLink to="/blog/2021-11-21-this-is-a-test-post">To first post in blog (Dynamic page)</NuxtLink><br />
       <NuxtLink to="/code-snippet/2021-11-21-this-is-a-code-snippet-from-the-conig-yml">To call without _slug (Test)</NuxtLink>
       <br />
       <br />
@@ -43,7 +43,9 @@ a {
 
 </style>
 <script>
-import cpnt200_header from '../components/Header.vue'
+import cnavigation from '../components/Navigation.vue'
+import cheader from '../components/Header.vue'
+import cfooter from '../components/Footer.vue'
 export default {
 
   head() {
@@ -53,13 +55,16 @@ export default {
   },
   data() {
     return { 
-      info: {
+      siteInfo: {
         title:'DATA TITLE TEST'
       }
     }
   },
+  components:{
+    cnavigation, cheader, cfooter
+  },  
   async asyncData ({ $content }) {
-    const page = await $content('home').fetch()
+    const page = await $content('intro').fetch()
     const blog = await $content('blog/2021-11-21-this-is-a-test-post').fetch()
     const profile = await $content('profile/2021-11-22-this-is-the-first-profile').fetch()
     const code = await $content('code-snippet/2021-11-22-this-is-a-first-code-snippet').fetch()
