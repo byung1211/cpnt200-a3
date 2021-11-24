@@ -7,9 +7,14 @@
   
 ### Attributions
 
-- **A tiger image** from https://pixels.com
+- **Tom cuise image** from https://www.goldenglobes.com/person/tom-cruise
+- 
 
 ### Code Review
+
+- 2021.11.24
+
+  I made three components, Header, Footer and Navigation in Header component. Actually, I have done this for both assignments, 3 and 4. however, I will improve a little more for the assignment 4. Wow anyway, it took my time pretty a lot.
 	
 - 2021.11.20
 
