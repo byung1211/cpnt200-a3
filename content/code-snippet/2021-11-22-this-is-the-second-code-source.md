@@ -19,9 +19,9 @@ code:
         }
       }
     }
-description: >-
+---
   ### [fallback](https://nuxtjs.org/docs/features/file-system-routing#fallback)
 
 
   Controls whether the router should fallback to hash mode when the browser does not support history.pushState but mode is set to history.
----
+
