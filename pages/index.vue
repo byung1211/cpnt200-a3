@@ -1,7 +1,9 @@
 <template>
   <v-main>
     <v-container>
-    <Header :info="siteInfo" />
+    
+    <Header :siteInfo="siteInfo" :pageInfo="pageInfo"/>
+
     <section class="flex flex-col mx-10">
       <div class="text-center mt-8 mb-2">
         <h1 class="text-2xl">Hello, I am Alex, How are you doing?</h1>
@@ -13,7 +15,9 @@
         <nuxt-content :document="introInfo" />
       </div>
     </section>
+    
     <Footer :info="siteInfo" />
+    
     </v-container>
   </v-main>
 </template>
@@ -36,6 +40,9 @@ export default {
   data() {
     return {
       // Custom page data comes here.
+      pageInfo: {
+        name: 'home',
+      }
     }
   },
   components:{

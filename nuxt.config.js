@@ -21,6 +21,11 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+
+    // Added By Alex-Byung Uk An
+    // Custom css styles go to this file.
+    '@/assets/css/custom.css',
+    
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -35,6 +40,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxt/image',
+    '@nuxtjs/vuetify',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
