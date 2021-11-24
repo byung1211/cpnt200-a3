@@ -6,8 +6,8 @@ picture: https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cg_face%2Cq
 introduction: "Actor Tom Cruise is the star of several box-office hits,
   including 'Risky Business,' 'A Few Good Men,' 'The Firm,' 'Jerry Maguire' and
   the 'Mission: Impossible' franchise."
-information: >-
-  ## Who Is Tom Cruise?
+---
+## Who Is Tom Cruise?
 
 
   Tom Cruise is an American actor known for his roles in iconic films throughout the 1980s, 1990s and 2000s, as well as his high profile marriages to actresses [Nicole Kidman](https://www.biography.com/people/nicole-kidman-9364474) and Katie Holmes. After developing an interest in acting during high school, he rocketed to fame with his star turns in *Risky Business* and *Top Gun*. Cruise later earned acclaim for his work in the hit film *Jerry Maguire* and the *Mission: Impossible* franchise.
@@ -26,4 +26,3 @@ information: >-
 
 
   Cruise married actress Mimi Rogers in 1987. It was through Rogers that the actor became a student of Scientology, the religion founded by writer L. Ron Hubbard. Cruise credited the church with curing his dyslexia, and he soon became one of its leading proponents. However, while his spiritual life flourished, his marriage to Rogers ended in 1990. That same year, Cruise made the racecar drama *Days of Thunder* alongside Kidman. Though the movie was unpopular among critics and fans alike, the two lead actors had real chemistry. On Christmas Eve 1990, after a brief courtship, Cruise and Kidman married in Telluride, Colorado.
----
