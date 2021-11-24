@@ -3,10 +3,20 @@
   <v-container>
     <Header  :siteInfo="siteInfo" :pageInfo="pageInfo" />
     <section>
-      <h2 text-xl text-center>Blog Posts</h2>
+      <div class="text-center mt-8">
+        <h2 class="text-3xl font-bold">Blog Posts</h2>
+      </div>
       <ul>
         <li v-for="(post, index) in posts" :key="index">
-        {{ index+1 }}.  {{ post.title }}
+          <div class="mb-4">
+            <h3 class="text-xl font-bold mb-2">{{index+1}}.  {{ post.title }}</h3>
+            <h4>- Date: {{post.date}}</h4>
+            <h4>- Keywords: {{post.description}}</h4>
+            <nuxt-content
+              class="bg-gray-200 mt-2 mb-8 mx-4"
+              :document="post"
+            />
+          </div>
         </li>
       </ul>
     </section>
