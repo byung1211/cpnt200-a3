@@ -3,10 +3,26 @@
   <v-container>
     <Header  :siteInfo="siteInfo" :pageInfo="pageInfo" />
     <section>
-      <h2 text-xl text-center>Profile List</h2>
+      <div class="text-center mt-8">
+        <h2 class="text-3xl font-bold">Profile List</h2>
+      </div>
       <ul>
         <li v-for="(post, index) in posts" :key="index">
-        {{index+1}}.  {{ post.title }}
+          <div class="mb-4">
+            <h3 class="text-xl font-bold mb-2">{{index+1}}.  {{ post.title }}</h3>
+            <div class="text-center my-4 mx-auto">
+              <nuxt-img :src="post.picture" 
+                        :alt="post.name" 
+                        sizes="sm:100vw md:50vw lg:600px" />
+            </div>
+            <h4>- Name: {{post.name}}</h4>
+            <h4>- Date of Birth: {{post.dateofbirth}}</h4>
+            <h4>- Details</h4>
+            <nuxt-content
+              class="bg-gray-200 mt-2 mb-8 mx-4"
+              :document="post"
+            />
+          </div>
         </li>
       </ul>
     </section>
