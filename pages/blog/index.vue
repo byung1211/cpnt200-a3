@@ -9,7 +9,7 @@
       <ul>
         <li v-for="(post, index) in posts" :key="index">
           <div class="mb-4">
-            <h3 class="text-xl font-bold mb-2">{{index+1}}.  {{ post.title }}</h3>
+            <h3 class="text-xl font-bold mb-2"><NuxtLink :to="`/blog/${post.slug}`">{{index+1}}.  {{ post.title }}</NuxtLink></h3>
             <h4>- Date: {{post.date}}</h4>
             <h4>- Keywords: {{post.description}}</h4>
             <nuxt-content

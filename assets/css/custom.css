@@ -13,3 +13,12 @@ body {
   margin: 0px;
   background-color:#fafafa;
 }
+
+a {
+  color: DarkBlue;
+  cursor: pointer;
+}
+
+a:hover {
+  color: Blue;
+}

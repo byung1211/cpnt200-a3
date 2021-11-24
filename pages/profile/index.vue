@@ -9,7 +9,7 @@
       <ul>
         <li v-for="(post, index) in posts" :key="index">
           <div class="mb-4">
-            <h3 class="text-xl font-bold mb-2">{{index+1}}.  {{ post.title }}</h3>
+            <h3 class="text-xl font-bold mb-2"><NuxtLink :to="`/profile/${post.slug}`">{{index+1}}.  {{ post.title }}</NuxtLink></h3>
             <div class="text-center my-4 mx-auto">
               <nuxt-img :src="post.picture" 
                         :alt="post.name" 
